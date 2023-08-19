@@ -11,3 +11,17 @@ close_terminal_session(); // No longer be able to do run_exec_console.
 ```
 ## WinForms Support Notice
 If I ever add WinForms into VisualJS, it will be strictly limtied.<br>Example: Placing button/panel would be able to use a HTML element. Not magic like Visual Studio.
+## Versions (NEW)
+Version 1:
+- run_exec_console("ECHO off");
+- open_terminal_session();
+- close_terminal_session();
+<br>In Version 1 to run code you can only use ECHO and echo.
+```js
+open_terminal_session();
+run_exec_console("ECHO on");
+run_exec_console("echo hi");
+run_exec_console("ECHO off");
+run_exec_console("echo hi");
+close_terminal_session();
+```<br>Version 1 uses the console, but will soon use GetElementById (maybe)
