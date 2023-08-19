@@ -5,8 +5,8 @@ VisualJS lets you run C# code in real-time!<br>Say goodbye to compiling web brow
 You can run VSConsole/BAT files with VisualJS! (quite limited...)<br>For example:
 ```js
 open_terminal_session(); // no longer able to do run_exec_console or open_terminal_session.
-run_exec_console("@ECHO off");
-run_exec_console("echo hello!");
+run_exec_console("ECHO off"); // wont say "echo hello!"
+run_exec_console("echo hello!"); // "hello!"
 close_terminal_session(); // No longer be able to do run_exec_console.
 ```
 ## WinForms Support Notice
